@@ -17,7 +17,7 @@ enum Algorithm {
 	Quick
 };
 
-const int window_width = 1500;
+const int window_width = 1200;
 const int window_height = 800;
 
 class Visualizer {
