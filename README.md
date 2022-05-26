@@ -4,4 +4,4 @@
 It's a simple program to show how sorting algorithms operating writed using SFML.
 ## How to run
 You can download it [here](https://github.com/Ziaft/VIsualizer/releases/tag/1.0).
-Or you can download source code and download SFML SDK, then configure project following [this](https://www.sfml-dev.org/tutorials/2.5/start-vc.php) tutorial.
+Or you can download source code and build it with CMake. I use library for Linux. If you need another, just download it from [SFML download page](https://www.sfml-dev.org/download/sfml/2.5.1/) and configure CMakeLists.txt.
