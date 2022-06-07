@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(Visualizer)
 
-if(WIN320)
+if(WIN32)
     set(SFML_INCLUDE_DIR    lib/MinGW/SFML-2.5.1/include)
     set(SFML_LIBRARY_DIR    lib/MinGW/SFML-2.5.1/lib)
     set(SFML_DIR            lib/MinGW/SFML-2.5.1/lib/cmake/SFML)
