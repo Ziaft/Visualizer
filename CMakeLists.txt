@@ -1,9 +1,15 @@
 cmake_minimum_required(VERSION 3.10)
 project(Visualizer)
 
-set(SFML_INCLUDE_DIR lib/SFML-2.5.1/include)
-set(SFML_LIBRARY_DIR lib/SFML-2.5.1/lib)
-set(SFML_DIR lib/SFML-2.5.1/lib/cmake/SFML)
+if(WIN320){
+    set(SFML_INCLUDE_DIR    lib/MinGW/SFML-2.5.1/include)
+    set(SFML_LIBRARY_DIR    lib/MinGW/SFML-2.5.1/lib)
+    set(SFML_DIR            lib/MinGW/SFML-2.5.1/lib/cmake/SFML)
+} else {
+    set(SFML_INCLUDE_DIR    lib/GCC/SFML-2.5.1/include)
+    set(SFML_LIBRARY_DIR    lib/GCC/SFML-2.5.1/lib)
+    set(SFML_DIR            lib/GCC/SFML-2.5.1/lib/cmake/SFML)
+}
 
 link_directories(SFML_LIBRARY_DIR)
 include_directories(SFML_INCLUDE_DIR)
